@@ -7,11 +7,11 @@ My first go at the Ionic Framework and AngularJS.
 1. `bower install` to install *ngCordova* and *moment*
 2. `ionic serve` to run the app in the browser
 
-Unfortunately, I wasn't able to run it on a proper Android enviroment, not even on the emulator, so it has been tested only on Google Chrome.
+Unfortunately, I was able to run it on the Android emulator for only a short period of time (the development was done on Google Chrome). It was run on an Android Virtual Device (AVD) emulating a Nexus 4 and executing Android 4.1.2. The behavior was the same as the one on Google Chrome.
 
 ## TODO list
 
-- [ ] run on Android
+- [X] run on Android
 - [ ] add swipe from one city to another in #/tab/weather
 
 ## Prints
