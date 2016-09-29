@@ -1,0 +1,27 @@
+<ion-view view-title="Available Cities">
+	<ion-content class="padding">
+		<h2>Available Cities</h2>
+
+		<ion-list>
+			<ion-item ng-repeat="city in cities track by $index">
+				<span ng-click="checkWeather({{city.id}})">
+					{{city.name}} - {{city.country}}
+				</span>
+				<i style="font-size: 25px" class="icon ion-ios-close-outline" ng-click="deleteCity({{city.id}})"></i>
+			</ion-item>
+		</ion-list>
+
+		<br>
+
+		<label class="item item-input">
+			<input type="text" placeholder="City name" ng-model="cityName">
+		</label>
+		<label class="item item-input">
+			<input type="text" placeholder="Country ISO code" ng-model="countryCode">
+		</label>
+
+		<button ng-click="addCity()" class="button button-balanced">
+			Add city!
+		</button>
+	</ion-content>
+</ion-view>

@@ -1,6 +1,6 @@
 {
-  "name": "My Ionic App",
-  "short_name": "My Ionic App",
+  "name": "ionic-weather-app",
+  "short_name": "ionic-weather-app",
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{

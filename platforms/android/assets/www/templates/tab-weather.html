@@ -1,0 +1,35 @@
+<ion-view view-title="Cities">
+	<ion-content>
+		<div ng-show="cityExists">
+			<h1><a href="#/tab/cities">{{currentCityName}}</a></h1>
+
+			<ion-list>
+				<ion-item>
+					<img src="http://openweathermap.org/img/w/{{currentIcon}}.png"/>
+
+					{{currentDate}}
+					<br>
+					temp: {{currentTemperature}}&deg;C
+					{{currentWeather}}
+				</ion-item>
+				<ion-item ng-repeat="weather in weathers">
+					<img src="http://openweathermap.org/img/w/{{weather.icon}}.png"/>
+
+					{{weather.date}}
+					<br>
+					min: {{weather.minTemperature}}&deg;C
+					max: {{weather.maxTemperature}}&deg;C
+					{{weather.weather}}
+				</ion-item>
+			</ion-list>
+		</div>
+
+		<div ng-hide="cityExists">
+			<div class="card">
+				<div class="item item-text-wrap">
+					<a href="#/tab/cities">You have to choose a city!</a>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
