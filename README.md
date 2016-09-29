@@ -2,6 +2,8 @@
 
 My first go at the Ionic Framework and AngularJS.
 
+The relevant code is at [/www](/www), mainly the [js file](/www/js/app.js).
+
 ## Running
 
 1. `bower install` to install *ngCordova* and *moment*
